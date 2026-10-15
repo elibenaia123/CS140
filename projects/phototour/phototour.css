@@ -1,0 +1,168 @@
+/* Fiji Discovery Photo Tour
+   Student: Elizabeth Benaia */
+
+/* General page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263746;
+    background-color: #EAF7FB;
+    background-image: url("images/flag.webp");
+    background-repeat: repeat;
+    line-height: 1.6;
+}
+
+/* Website header */
+header {
+    background-color: #075985;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 4px solid #38BDF8;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #0C4A6E;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #38BDF8;
+    color: #082F49;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #BAE6FD;
+    border-radius: 8px;
+}
+
+/* Main headings */
+h1, h2, h3 {
+    color: #075985;
+}
+
+h2 {
+    border-bottom: 2px solid #38BDF8;
+    padding-bottom: 6px;
+}
+
+/* Home page introduction */
+#intro {
+    background-color: #F0F9FF;
+    padding: 18px;
+    border-left: 5px solid #0284C7;
+    margin-bottom: 25px;
+}
+
+/* Destination list */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Custom bullets for the home page */
+#destinations {
+    list-style-image: url("images/blue-bullet.png");
+}
+
+#destinations a {
+    color: #0369A1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#destinations a:hover {
+    text-decoration: underline;
+}
+
+/* Photo sections */
+figure {
+    margin: 25px 0;
+    padding: 12px;
+    background-color: #F0F9FF;
+    border: 1px solid #BAE6FD;
+    border-radius: 6px;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    color: #475569;
+    font-size: 0.9rem;
+    padding-top: 8px;
+}
+
+/* Decorative image on the home page */
+#home-page {
+    background-image: url("images/fiji-decoration.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 120px;
+}
+
+/* Footer */
+footer {
+    background-color: #0C4A6E;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Smaller screens */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    main {
+        margin: 12px;
+        padding: 15px;
+    }
+}
