@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header h1 {
+    background-color: rgb(172, 227, 230);
+    margin-bottom: 0%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(210, 241, 241);
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 200px;
+}
+
+footer {
+    padding: 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.footer-grid a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: blue;
+}
