@@ -1,0 +1,55 @@
+body {
+    font-family: cursive;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(189, 242, 82);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(209, 238, 150);
+}
+
+nav a {
+    display: flex;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+.sidebar h2 {
+    color: rgb(16, 78, 57);
+}
+
+.image-box {
+    margin: 0;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+main {
+    width: 75%;
+}
+
