@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Schedule</title>
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
     <header>
@@ -15,13 +16,14 @@
     </nav>
     <br>
     <main>
-        <table border="1">
+        <div class="tablediv">
+        <table id="schedule">
             <caption>My Class Schedule</caption>
             <thead>
                 <tr>
                     <th scope="col">CS</th>
                     <th scope="col">Course Name</th>
-                    <th scope="col">Title</th>
+                    <th scope="col">Num</th>
                     <th scope="col">Location</th>
                     <th scope="col">Time</th>
                     <th scope="col">Credits</th>
@@ -63,7 +65,8 @@
                 </tr>
             </tfoot>
         </table>
-        <h3>Questions</h3>
+        </div>
+        <h3>Questions A</h3>
         <h4>When do you use a table?</h4>
         <p>Table is used when you want to organize information into rows and columns.</p>
         <h4>When do you not use a table?</h4>
@@ -74,6 +77,14 @@
         <p>The most helpful one was asking the different purposes of each tag and knowing when or how to use them.</p>
         <h4>Did AI ever try to give you more than you asked for, like writing your code? What did you do?</h4>
         <p>AI would give examples of how to use the tags and I studied the example in order to know how to write my own code.</p>
+        
+        <h3>Questions B</h3>
+        <h4>Why don't we use the border attribute?</h4>
+        <p>The border attribute is old style so we use css to style since it is better and easier to change the design.</p>
+        <h4>What is the easiest way to color every other row a different color?</h4>
+        <p>Use the :nth-child() structural pseudo-class.</p>
+        <h4>What does the value in the parentheses of your structural pseudo-class mean? Give one other value you could use and which rows it would select.</h4>
+        <p>(even) means it selects every even numbered row like 2,4,6. Another value is odd, which selects every odd numbered row like 1,3,5.</p>
     </main>
     <footer>
         <p>&copy; 2026 Elizabeth Benaia</p>
