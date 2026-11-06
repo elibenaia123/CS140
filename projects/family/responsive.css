@@ -68,6 +68,8 @@ main {
 
 .card img {
     width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
 @media ONLY screen AND (max-width: 680px) {
