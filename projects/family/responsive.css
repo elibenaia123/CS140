@@ -106,16 +106,4 @@ main {
     nav {
         display: none;
     }
-
-    .sidebar {
-        display: none;
-    }
-
-    body {
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-    .card {
-        break-inside: avoid;
-    }
 }
