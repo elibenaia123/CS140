@@ -4,7 +4,8 @@ body {
 
 .container {
     display: flex;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 .sidebar {
@@ -13,7 +14,7 @@ body {
 }
 
 main {
-    width: 75%;
+    width: 60%;
 }
 
 .table {
