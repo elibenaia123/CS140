@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Benaia's Web Design Site</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
+    <main>
+        <form action="formprocessing.html" method="get">
+            <div class="form-row">
+                <label for="personname">Full Name</label>
+                <input id="personname" type="text" name="fullname" placeholder="Full Name">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input type="password" name="pass" id="password">
+            </div>
+            <div class="form-row">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                <option value="blank">------</option>
+                <option value="CA">California</option>
+                <option value="HI">Hawaii</option>
+                <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Gender</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+            </div>
+            <div class="form-row">
+                <label>Hobbies</label>
+                <input type="checkbox" name="hobbies" id="netball" value="netball">
+                <label for="netball">Netball</label>
+                <input type="checkbox" name="hobbies" id="travel" value="travel">
+                <label for="travel">Tavel</label>
+                <input type="checkbox" name="hobbies" id="movies" value="movies">
+                <label for="movies">Movies</label>
+            </div>
+            <div class="form-row">
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Write your answer here..."></textarea>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </form>
+
+        <h3>Questions</h3>
+        <h4>The form tag has an "action" attribute. What does it do?</h4>
+        <p>It specifies where the form data is sent when the user submits the form.</p>
+        <h4>The form tag has a "method" attribute. What does it do?</h4>
+        <p>It lets you declare either to using a get request or post request.</p>
+        <h4>What is the difference between a "POST" and a "GET"?</h4>
+        <p>POST allows you to make changes or send information to the server without displaying it in the URL. GET retrieves information and displays it in the URL.</p>
+        <h4>How do you fill in a form control with a pre-set value, and how is that different from a placeholder?</h4>
+        <p>
+            Textbox uses the value attribute to fill in a default answer while placeholder is a hint that disappears when the user types. 
+            Textarea put the pre-set text between the opening and closing tags. A placeholder is a hint that disappears when the user starts typing.
+            Select box uses the selected attribute to make an opinion selected by default.
+            Checkbox uses the checked attribute to select a radio button by default.
+            Radio button uses the checked attribute to select a radio button by default.
+        </p>
+        <h4>List all the form controls that HTML5 added. Which ones did you put in your form?</h4>
+        <p>Form controls HTML5 added are email, url, number,range, date, time, dateline-local, month, week, color, search and tel. I did not use any of the new HTML5 input types.</p>
+    </main>
+    <footer>
+        &copy; 2026 Elizabeth Benaia
+    </footer>
+</body>
+</html>
