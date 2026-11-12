@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
@@ -14,7 +15,9 @@
         <a href="#">About</a>
     </nav>
     <main>
-        <form action="formprocessing.html" method="get">
+        <form action="formprocessing.html" method="post">
+            <fieldset>
+                <legend>Account</legend>
             <div class="form-row">
                 <label for="personname">Full Name</label>
                 <input id="personname" type="text" name="fullname" placeholder="Full Name">
@@ -22,6 +25,10 @@
             <div class="form-row">
                 <label for="email">Email</label>
                 <input type="text" name="email" id="email">
+            </div>
+            <div class="form-row">
+                <label for="bdate">Birthday</label>
+                <input type="date" name="bdate" id="bdate">
             </div>
             <div class="form-row">
                 <label for="password">Password</label>
@@ -36,32 +43,29 @@
                 <option value="UT">Utah</option>
                 </select>
             </div>
-            <div class="form-row">
-                <label>Gender</label>
-                <input type="radio" name="gender" id="female" value="female">
-                <label for="female">Female</label>
-                <input type="radio" name="gender" id="male" value="male">
-                <label for="male">Male</label>
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label><input type="checkbox" name="hobbies">Netball</label>
+                <label><input type="checkbox" name="hobbies">Travel</label>
+                <label><input type="checkbox" name="hobbies">Movies</label>
             </div>
-            <div class="form-row">
-                <label>Hobbies</label>
-                <input type="checkbox" name="hobbies" id="netball" value="netball">
-                <label for="netball">Netball</label>
-                <input type="checkbox" name="hobbies" id="travel" value="travel">
-                <label for="travel">Tavel</label>
-                <input type="checkbox" name="hobbies" id="movies" value="movies">
-                <label for="movies">Movies</label>
+            <div class="check-row">
+                <div class="spacer">Gender</div>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
             </div>
             <div class="form-row">
                 <label for="comments">Comments</label>
                 <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Write your answer here..."></textarea>
             </div>
             <div class="form-row">
-                <input type="submit">
+                <div class="spacer"></div>
+                <input type="submit" value="Sign Up">
             </div>
+            </fieldset>
         </form>
 
-        <h3>Questions</h3>
+        <h3>Questions A</h3>
         <h4>The form tag has an "action" attribute. What does it do?</h4>
         <p>It specifies where the form data is sent when the user submits the form.</p>
         <h4>The form tag has a "method" attribute. What does it do?</h4>
@@ -78,6 +82,14 @@
         </p>
         <h4>List all the form controls that HTML5 added. Which ones did you put in your form?</h4>
         <p>Form controls HTML5 added are email, url, number,range, date, time, dateline-local, month, week, color, search and tel. I did not use any of the new HTML5 input types.</p>
+
+        <h3>Questions B</h3>
+        <h4>What are different ways to style your form?</h4>
+        <p>Change background color and font, add borders around the form, add padding and margins, use hover effects and change width of labels.</p>
+        <h4>Why does the professor like to use flex?</h4>
+        <p>Because it makes it easier to organize and align the form like label and input fields.</p>
+        <h4>What makes for a good mobile form?</h4>
+        <p>Easy to tap on large input fields or buttons, clean design and usage of colors.</p>
     </main>
     <footer>
         &copy; 2026 Elizabeth Benaia
