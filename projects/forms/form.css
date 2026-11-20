@@ -6,13 +6,6 @@ header {
     text-align: center;
 }
 
-main {
-    max-width: auto;
-    margin: auto;
-    padding: 25px;
-    background-color: white;
-}
-
 .form-row, .check-row {
     display: flex;
     margin: 10px 0;
