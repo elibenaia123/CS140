@@ -1,0 +1,66 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    background-color: rgb(176, 226, 176);
+    color: #333;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    max-width: auto;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+}
+
+.form-row, .check-row {
+    display: flex;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+fieldset {
+    background-color: rgb(176, 226, 176);
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgba(100, 100, 100, 100);
+}
+
+
+.form-row input:not([type="submit"]) {
+    padding: 5px;
+    background-color: rgb(230, 236, 230);
+}
+
+input[type="submit"] {
+    background-color: rgb(70, 155, 253);
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(23, 78, 168);
+}
+
+.spacer {
+    width: 150px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+}

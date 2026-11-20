@@ -3,32 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Form</title>
+    <title>Girls Scout Membership Form</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
-        <h1>Job Application Form</h1>
+        <h1>Girls Scout Membership Form</h1>
     </header>
     <main>
         <form action="formprocessing.html" method="post">
             <fieldset>
-                <legend>Job Application</legend>
+                <legend>Membership Form</legend>
             <div class="form-row">
                 <label for="personname">Full Name</label>
                 <input type="text" id="personname" name="fullname" placeholder="Full Name">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="form-row">
+                <label for="number">Phone Number</label>
+                <input type="tel" name="number" id="number" placeholder="Enter your phone number">
             </div>
             <div class="form-row">
                 <label for="bdate">Birthday</label>
                 <input type="date" id="bdate" name="bdate">
             </div>
             <div class="form-row">
-                <label for="Address">Current Address</label>
-                <input type="text" id="Address" name="address" placeholder="Current Address">
+                <label for="grade">Grade Level</label>
+                <select name="grade" id="grade">
+                <option value="blank">------</option>
+                <option value="Elementary">Elementary</option>
+                <option value="Middle School">Middle School</option>
+                <option value="High School">High School</option>
+                <option value="College">College</option>
+                </select>
             </div>
-            
+            <div class="check-row">
+                <label>Gender</label>
+                <div class="spacer"></div>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+            <div class="check-row">
+                <label>Hobbies</label>
+                <div class="spacer"></div>
+                <label><input type="checkbox" name="hobbies">Camping</label>
+                <label><input type="checkbox" name="hobbies">Community Service</label>
+                <label><input type="checkbox" name="hobbies">Arts & Crafts</label>
+            </div>
+            <div class="form-row">
+                <label for="comments">Why do you want to join?</label>
+                <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Write your answer here..."></textarea>
+            </div>
+            <div class="form-row">
+                <input type="submit" value="Sign Up">
+            </div>
             </fieldset>
         </form>
     </main>
+    <footer>
+        <p>&copy; 2026 Elizabeth Benaia</p>
+    </footer>
 </body>
 </html>
